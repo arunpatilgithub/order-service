@@ -30,6 +30,6 @@ spec:
             - name: SPRING_CLOUD_CONFIG_URI
               value: http://my-shoppingapp-configservice
             - name: SPRING_R2DBC_URL
-              value: r2dbc:postgresql://postgres/myshoppingappdb
+              value: r2dbc:postgresql://postgres/myshoppingapporderdb
             - name: SPRING_FLYWAY_URL
-              value: jdbc:postgresql://postgres/myshoppingappdb
+              value: jdbc:postgresql://postgres/myshoppingapporderdb

@@ -28,6 +28,7 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-validation'
     implementation 'org.springframework.boot:spring-boot-starter-webflux:3.0.2'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
+    implementation 'org.springframework.cloud:spring-cloud-stream-binder-rabbit'
     implementation 'org.springframework.retry:spring-retry'
 
     runtimeOnly 'org.flywaydb:flyway-core'
@@ -45,6 +46,9 @@ dependencies {
     testImplementation 'org.testcontainers:junit-jupiter'
     testImplementation 'org.testcontainers:postgresql'
     testImplementation 'org.testcontainers:r2dbc'
+
+    testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder:4.0.1'
+
 }
 
 dependencyManagement {
